@@ -1,8 +1,8 @@
 
 module.exports = {
     output: {
-        path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js',
+        path: path.resolve(__dirname, 'public')
     },
     mode: 'production',
 };
