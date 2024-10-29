@@ -12,11 +12,11 @@ const countElement = document.getElementById('count');
 // initiliaze click to 0
 let count = 0;
 
-const handleClick = () => {
+const updateCounter = () => {
     count++;
     countElement.textContent = `Clicked ${count} times`;
 };
 
-const debouncedHandleClick = debounce(handleClick, 500);
+const debouncedHandleClick = debounce(updateCounter, 500);
 
 button.addEventListener('click', debouncedHandleClick);
