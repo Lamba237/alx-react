@@ -17,6 +17,6 @@ const updateCounter = () => {
     countElement.textContent = `Clicked ${count} times`;
 };
 
-const debouncedHandleClick = debounce(updateCounter, 500);
+const debouncedHandleClick = debounce("updateCounter", "_.debounce", "500");
 
 button.addEventListener('click', debouncedHandleClick);
