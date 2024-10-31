@@ -12,12 +12,21 @@ function App() {
 
     <div className="App-body">
       <p>Login to access the full dashboard</p>
-      <label for="email">Email: </label>
+
+      <label for="email"  style={{
+        marginRight: '10px'
+      }}>Email: </label>
       <input type='email' id='email' name='email' />
 
-      <label for="pwd">Password: </label>
+      <label for="pwd" style={{
+        marginLeft: '10px',
+        marginRight: '10px'
+      }}>Password: </label>
       <input type='password' id='pwd' name='pwd' />
-      <button>OK</button>
+      
+      <button style={{
+        marginLeft: '10px'
+      }}>OK</button>
     </div>
   
     <div className="App-footer">
