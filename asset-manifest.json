@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Lamba237/Lamba237.github.io.git/static/css/main.1f885fe5.css",
-    "main.js": "/Lamba237/Lamba237.github.io.git/static/js/main.51a50ece.js",
-    "static/js/453.59b8a61b.chunk.js": "/Lamba237/Lamba237.github.io.git/static/js/453.59b8a61b.chunk.js",
-    "static/media/holberton-logo.jpg": "/Lamba237/Lamba237.github.io.git/static/media/holberton-logo.24bab5d633e36ca8d17e.jpg",
-    "index.html": "/Lamba237/Lamba237.github.io.git/index.html",
-    "main.1f885fe5.css.map": "/Lamba237/Lamba237.github.io.git/static/css/main.1f885fe5.css.map",
-    "main.51a50ece.js.map": "/Lamba237/Lamba237.github.io.git/static/js/main.51a50ece.js.map",
-    "453.59b8a61b.chunk.js.map": "/Lamba237/Lamba237.github.io.git/static/js/453.59b8a61b.chunk.js.map"
+    "main.css": "/static/css/main.1f885fe5.css",
+    "main.js": "/static/js/main.9bea1c1c.js",
+    "static/js/453.59b8a61b.chunk.js": "/static/js/453.59b8a61b.chunk.js",
+    "static/media/holberton-logo.jpg": "/static/media/holberton-logo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/index.html",
+    "main.1f885fe5.css.map": "/static/css/main.1f885fe5.css.map",
+    "main.9bea1c1c.js.map": "/static/js/main.9bea1c1c.js.map",
+    "453.59b8a61b.chunk.js.map": "/static/js/453.59b8a61b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f885fe5.css",
-    "static/js/main.51a50ece.js"
+    "static/js/main.9bea1c1c.js"
   ]
 }
