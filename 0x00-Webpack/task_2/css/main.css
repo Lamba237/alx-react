@@ -1,16 +1,11 @@
 #count {
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.button-container {
-    display: flex;
-    align-items: center;
+	display: inline;
+	font-style: bold;
 }
 
 #logo {
-    background-image: url('../assets/holberton-logo.jpg');
-    background-size: 200px 200px;
-    height: 200px;
-    width: 200px;
+	width: 200px;
+	height: 200px;
+	background: url('../assets/holberton-logo.jpg');
+	background-size: 200px 200px;
 }
