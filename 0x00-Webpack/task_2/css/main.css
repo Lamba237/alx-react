@@ -1,5 +1,11 @@
 #count {
     font-weight: bold;
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
 }
 
 #logo {

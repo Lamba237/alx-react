@@ -5,8 +5,7 @@ import '../css/main.css';
 $('body').append('<div id="logo"></div>');
 $('body').append('<p>Holberton Dashboard</p>');
 $('body').append('<p>Dashboard data for the students</p>');
-$('body').append('<button>Click here to get started</button>');
-$('body').append("<p id='count'></p>");
+$('body').append('<div class="button-container"><button>Click here to get started</button><p id="count"></p></div>');
 $('body').append('<p>Copyright - Holberton School</p>');
 
 const button = document.getElementsByTagName('button')[0];
