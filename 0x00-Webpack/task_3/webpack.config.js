@@ -60,9 +60,7 @@ module.exports = {
         new CleanWebpackPlugin()
     ],
     devServer: {
-        static: {
-            directory: path.join(__dirname, 'public'),
-        },
+        contentBase: './public',
         open: true,
         port: 8564
     },
