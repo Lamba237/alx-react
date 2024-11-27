@@ -5,8 +5,10 @@ export function getFullYear() {
 export function getFooterCopy(isIndex) {
     if (isIndex === true) {
         return 'Holberton School';
-    } else {
+    } else if (isIndex === false) {
         return 'Holberton School main dashboard';
+    } else {
+        return 'invalid input type';
     }
 }
 

@@ -13,12 +13,15 @@ export default function Notifications() {
             top: '5px',
             right: '5px',
             marginTop: '10px',
-            marginRight: '10px'
+            marginRight: '10px',
          }}
          aria-label='close'
          onClick={handleClick}
          >
-         X
+         <img src='close-icon.png' alt='close' style={{
+            width: '15px',
+            height: '15px',
+         }}/>
          </button>
          <p>Here is the list of notifications</p>
          <ul>

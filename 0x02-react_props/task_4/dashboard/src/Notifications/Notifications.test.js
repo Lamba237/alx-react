@@ -45,4 +45,30 @@ describe('<Notifications />', () => {
     const wrapper = shallow(<Notifications displayDrawer={true} />);
     expect(wrapper.find('.Notifications').exists()).toBe(true);
   });
+
+  it('renders correctly if you pass an empty array or if you don’t pass the listNotifications property', () => {
+    let wrapper = shallow(<Notifications displayDrawer={true} listNotifications={[]} />);
+    expect(wrapper.find(NotificationItem).length).toBe(1);
+    expect(wrapper.find(NotificationItem).at(0).prop('value')).toBe('No new notification for now');
+
+    wrapper = shallow(<Notifications displayDrawer={true} />);
+    expect(wrapper.find(NotificationItem).length).toBe(1);
+    expect(wrapper.find(NotificationItem).at(0).prop('value')).toBe('No new notification for now');
+  });
+
+  it('renders the correct number of NotificationItem elements when listNotifications is passed', () => {
+    const listNotifications = [
+      { id: 1, type: 'default', value: 'New course available' },
+      { id: 2, type: 'urgent', value: 'New resume available' },
+      { id: 3, type: 'urgent', html: { __html: '<strong>Urgent requirement</strong>' } },
+    ];
+    const wrapper = shallow(<Notifications displayDrawer={true} listNotifications={listNotifications} />);
+    expect(wrapper.find(NotificationItem).length).toBe(3);
+  });
+
+  it('does not display "Here is the list of notifications" when listNotifications is empty, but displays "No new notification for now"', () => {
+    const wrapper = shallow(<Notifications displayDrawer={true} listNotifications={[]} />);
+    expect(wrapper.find('p').exists()).toBe(false);
+    expect(wrapper.find(NotificationItem).at(0).prop('value')).toBe('No new notification for now');
+  });
 });

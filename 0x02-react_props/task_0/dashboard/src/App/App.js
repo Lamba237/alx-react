@@ -16,7 +16,7 @@ function App() {
           <Login />
         </div>
         
-        <div className="App.footer">
+        <div className="App-footer">
           <Footer />
         </div>
       </>

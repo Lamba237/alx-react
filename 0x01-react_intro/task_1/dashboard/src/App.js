@@ -25,7 +25,7 @@ function App() {
       <input type='password' id='pwd' name='pwd' />
       
       <button style={{
-        marginLeft: '10px'
+        marginLeft: '10px',
       }}>OK</button>
     </div>
   
